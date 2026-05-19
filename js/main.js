@@ -52,6 +52,39 @@ dots.forEach(dot => {
 });
 
 startTimer();
+const bookingForm = document.getElementById('booking-form');
+
+if (bookingForm) {
+  bookingForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(bookingForm);
+
+    const response = await fetch('https://formspree.io/f/maqkqorb', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      bookingForm.innerHTML = `
+        <div class="booking-success">
+          <span>✅</span>
+          <h3>Booking Confirmed!</h3>
+          <p>We've received your booking. We'll be in touch shortly.</p>
+        </div>
+      `;
+    } else {
+      bookingForm.innerHTML = `
+        <div class="booking-success">
+          <span>❌</span>
+          <h3>Something went wrong</h3>
+          <p>Please try again or contact us directly.</p>
+        </div>
+      `;
+    }
+  });
+}
 
 // ── Booking Form ──
 /*const bookingForm = document.getElementById('booking-form');
