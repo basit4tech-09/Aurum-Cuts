@@ -1,0 +1,241 @@
+/* ── ABOUT ── */
+.about { background-color: var(--dark); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-image {
+  height: 520px;
+  border-radius: 4px;
+ /* background-color: #1a1a1a;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #161616 0px, #161616 1px,
+    #1a1a1a 1px, #1a1a1a 16px
+  );*/
+  background-image: url('../images/About.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border);
+  position: relative;
+}
+.about-image :hover{
+     transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: 16px; left: 16px;
+  right: -16px; bottom: -16px;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.about-text h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 0.93rem;
+  color: var(--grey);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.stat-num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 0.78rem;
+  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── SERVICES ── */
+.services { background-color: var(--black); }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2rem 1.8rem;
+  transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.service-icon { font-size: 1.8rem; }
+
+.service-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.87rem;
+  color: var(--grey);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.service-price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: 0.5rem;
+}
+
+/* ── TEAM ── */
+.team { background-color: var(--dark); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.barber-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.barber-card:hover { border-color: var(--gold); }
+
+.barber-image {
+  height: 280px;
+  background-color: #1e1e1e;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #1a1a1a 0px, #1a1a1a 1px,
+    #1e1e1e 1px, #1e1e1e 14px
+  );
+}
+
+.barber-2 { background-color: #1c1c1e; }
+
+.barber-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.barber-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.barber-title {
+  font-size: 0.78rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.barber-info p {
+  font-size: 0.87rem;
+  color: var(--grey);
+  line-height: 1.65;
+  margin-top: 0.3rem;
+}
+
+/* ── REVIEWS ── */
+.reviews { background-color: var(--black); }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-stars {
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.review-card p {
+  font-size: 0.9rem;
+  color: var(--grey);
+  line-height: 1.75;
+  font-style: italic;
+  flex: 1;
+}
+
+.reviewer {
+  font-size: 0.82rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-image { height: 380px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .section-heading { font-size: 2rem; }
+}

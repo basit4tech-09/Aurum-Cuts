@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/294747f67c.js" crossorigin="anonymous"></script>
+  <title>Aurum Cuts — Premium Barbershop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Aurum<span>Cuts</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="hero" id="home">
+    <div class="slides">
+
+      <div class="slide active">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-label">Welcome to Aurum Cuts</p>
+          <h1>Where Every Cut <span>Tells a Story</span></h1>
+          <p>Premium barbering in the heart of Manhattan. Walk in as a man. Leave as a legend.</p>
+          <a href="#booking" class="btn-primary">Book Your Seat</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-label">Signature Services</p>
+          <h1>Crafted With <span>Precision</span></h1>
+          <p>From sharp lineups to classic fades — every service delivered with mastery and care.</p>
+          <a href="#services" class="btn-primary">See Services</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-label">The Aurum Experience</p>
+          <h1>More Than a <span>Haircut</span></h1>
+          <p>Step into a space built for the modern gentleman. Luxury, comfort, and craft — all in one chair.</p>
+          <a href="gallery.html" class="btn-primary">View Gallery</a>
+        </div>
+      </div>
+
+      <!--new slides
+       <div class="slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-label">Signature Services</p>
+          <h1>Crafted With <span>Precision</span></h1>
+          <p>From sharp lineups to classic fades — every service delivered with mastery and care.</p>
+          <a href="#services" class="btn-primary">See Services</a>
+        </div>
+      </div>-->
+
+
+    </div>
+
+    <!-- Arrows -->
+    <button class="slide-arrow prev" id="prevSlide">&#8592;</button>
+    <button class="slide-arrow next" id="nextSlide">&#8594;</button>
+
+    <!-- Dots -->
+    <div class="slide-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <!--<span class="dot" data-index="3"></span>-->
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+        </div>
+        <div class="about-text">
+          <p class="section-label">Our Story</p>
+          <h2>Built on Craft. Driven by Pride.</h2>
+          <p>Aurum Cuts was born from a simple belief — that every man deserves a barbershop experience that matches his
+            standard. We don't just cut hair. We shape confidence.</p>
+          <p>Located in the heart of Manhattan, our shop blends old-school barbering tradition with modern luxury. Every
+            detail, from our tools to our towels, is chosen with intention.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">8+</span>
+              <span class="stat-text">Years Open</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5K+</span>
+              <span class="stat-text">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-text">Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-label centered">What We Offer</p>
+      <h2 class="section-heading centered">Our Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <span class="service-icon">✂️</span>
+          <h3>Haircut</h3>
+          <p>Classic or modern cuts tailored to your face shape and style.</p>
+          <span class="service-price">From $25</span>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">🪒</span>
+          <h3>Straight Razor Shave</h3>
+          <p>A traditional hot towel straight razor shave. Pure luxury.</p>
+          <span class="service-price">From $30</span>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">💈</span>
+          <h3>Beard Trim & Shape</h3>
+          <p>Precision beard sculpting to keep your look sharp and defined.</p>
+          <span class="service-price">From $20</span>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">⚡</span>
+          <h3>Lineup & Edge Up</h3>
+          <p>Clean, sharp lines that frame your face with precision.</p>
+          <span class="service-price">From $15</span>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">👑</span>
+          <h3>The Full Package</h3>
+          <p>Haircut, beard trim, lineup, and hot towel — the complete experience.</p>
+          <span class="service-price">From $65</span>
+        </div>
+
+        <div class="service-card">
+          <span class="service-icon">💆</span>
+          <h3>Scalp Treatment</h3>
+          <p>Nourishing scalp massage and treatment for healthy hair growth.</p>
+          <span class="service-price">From $35</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <p class="section-label centered">The Hands Behind the Craft</p>
+      <h2 class="section-heading centered">Meet the Barbers</h2>
+      <div class="team-grid">
+
+        <div class="barber-card">
+          <div class="barber-image"></div>
+          <div class="barber-info">
+            <h3>Marcus Holloway</h3>
+            <span class="barber-title">Master Barber · 10 Years</span>
+            <p>Specialist in fades, tapers, and classic cuts. Marcus brings old-school discipline to every chair.</p>
+          </div>
+        </div>
+
+        <div class="barber-card">
+          <div class="barber-image barber-2"></div>
+          <div class="barber-info">
+            <h3>DeShawn Carter</h3>
+            <span class="barber-title">Senior Barber · 6 Years</span>
+            <p>Known for razor-sharp lineups and creative designs. DeShawn turns haircuts into statements.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <p class="section-label centered">Client Words</p>
+      <h2 class="section-heading centered">What They Say</h2>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Best barbershop in Manhattan. Marcus gave me the cleanest fade I've ever had. Won't go anywhere else."</p>
+          <span class="reviewer">— James O.</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"The atmosphere alone is worth the visit. Add in DeShawn's lineup skills and it's a no-brainer."</p>
+          <span class="reviewer">— Malik T.</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Came in for the full package. Left feeling like a completely different man. Aurum Cuts is the real deal."
+          </p>
+          <span class="reviewer">— Chris B.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <p class="section-label centered">Reserve Your Spot</p>
+      <h2 class="section-heading centered">Book an Appointment</h2>
+      <form class="booking-form" id="booking-form" action="mailto:basit4tech@gmail.com" method="GET"
+        enctype="text/plain">
+        <div class="form-row">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+        </div>
+        <div class="form-row">
+          <input type="tel" name="Phone" placeholder="Phone Number" required />
+          <select name="Service" required>
+            <option value="" disabled selected>Select a Service</option>
+            <option>Haircut</option>
+            <option>Straight Razor Shave</option>
+            <option>Beard Trim & Shape</option>
+            <option>Lineup & Edge Up</option>
+            <option>The Full Package</option>
+            <option>Scalp Treatment</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <input type="date" name="Date" required />
+          <select name="Barber" required>
+            <option value="" disabled selected>Select a Barber</option>
+            <option>Marcus Holloway</option>
+            <option>DeShawn Carter</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-label">Find Us</p>
+          <h2>Come In & See Us</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>📍</span>
+              <p>147 West 34th Street, Manhattan, NY 10001</p>
+            </div>
+            <div class="contact-item">
+              <span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <a href="https://wa.me/2347062403876?text=Hello,%20I%20Would%20Like%20to%20have%20my%20hair%20cut"
+                target="_blank">Chat with Us On Whatsapp</p>
+            </div>
+            <div class="contact-item">
+              <span>✉️</span>
+              <a href="mailto:basit4tech@gmail.com">hello@aurumcuts.com</a>
+            </div>
+            <div class="contact-item">
+              <span>🕐</span>
+              <div>
+                <p>Mon – Fri: 9am – 8pm</p>
+                <p>Saturday: 8am – 6pm</p>
+                <p>Sunday: 10am – 4pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://maps.google.com/maps?q=Alowonle+Adigbe+Abeokuta+Nigeria&output=embed" width="100%"
+            height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="logo">Aurum<span>Cuts</span></a>
+      <p>147 West 34th Street, Manhattan, NY 10001</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Aurum Cuts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

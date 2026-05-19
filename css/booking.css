@@ -1,0 +1,49 @@
+.booking {
+  background: linear-gradient(135deg, #111 0%, #0a0a0a 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.booking-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus { border-color: var(--gold); }
+
+.booking-form select option { background-color: var(--card); }
+.booking-form input::placeholder { color: #555; }
+
+.booking-form .btn-primary {
+  align-self: center;
+  padding: 1rem 3rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .form-row { grid-template-columns: 1fr; }
+}
