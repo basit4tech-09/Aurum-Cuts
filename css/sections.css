@@ -157,8 +157,16 @@
     #1e1e1e 1px, #1e1e1e 14px
   );
 }
-
-.barber-2 { background-color: #1c1c1e; }
+.barber-1{
+   background-image: url('../images/noimg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.barber-2 { 
+  background-image: url('../images/noimg.jpg');
+  background-size: cover;
+  background-position: center; 
+}
 
 .barber-info {
   padding: 1.5rem;

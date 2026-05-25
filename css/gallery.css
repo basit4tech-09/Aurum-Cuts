@@ -15,7 +15,7 @@
 }
 
 .gallery-hero-content h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
   font-weight: 700;
   color: var(--white);
@@ -94,7 +94,7 @@
   border: 1px solid var(--border);
   padding: 0.45rem 1.2rem;
   border-radius: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.83rem;
   color: var(--grey);
   cursor: pointer;
@@ -133,7 +133,9 @@
   overflow: hidden;
   border: 1px solid var(--border);
   background-color: var(--card);
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
   cursor: pointer;
 }
 
@@ -147,80 +149,83 @@
   width: 100%;
   height: 300px;
   background-color: #1a1a1a;
-  background-image: repeating-linear-gradient(45deg,
-      #161616 0px, #161616 1px,
-      #1a1a1a 1px, #1a1a1a 14px);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #161616 0px,
+    #161616 1px,
+    #1a1a1a 1px,
+    #1a1a1a 14px
+  );
 }
 
 .gi-1 {
-   background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-2 {
-  background-image: url('../images/classic.jpg');
+  background-image: url("../images/classic.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-3 {
-  background-image: url('../images/full\ beard.jpg');
+  background-image: url("../images/full\ beard.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-4 {
-  background-image: url('../images/sharp\ line.jpg');
+  background-image: url("../images/sharp\ line.jpg");
   background-size: cover;
   background-position: center;
-
 }
 
 .gi-5 {
-  background-image: url('../images/high\ skin.jpg');
+  background-image: url("../images/high\ skin.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-6 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-7 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-8 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-9 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-10 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-11 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gi-12 {
-  background-image: url('../images/noimg.jpg');
+  background-image: url("../images/noimg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -234,7 +239,7 @@
 }
 
 .gallery-label h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--white);
@@ -270,7 +275,7 @@
 }
 
 .gallery-cta-inner h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--white);
@@ -293,7 +298,7 @@
   }
 
   .gallery-filter {
-    top: 0;
+    top: 60px;
   }
 }
 
